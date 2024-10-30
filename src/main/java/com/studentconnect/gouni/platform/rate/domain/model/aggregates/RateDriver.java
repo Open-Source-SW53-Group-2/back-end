@@ -4,7 +4,7 @@ import com.studentconnect.gouni.platform.rate.domain.model.commands.CreateRateDr
 import jakarta.persistence.*;
 import lombok.Getter;
 
-
+@Entity
 @Getter
 public class RateDriver {
     @Id
