@@ -46,22 +46,22 @@ This project contains the following specific features:
    cd GoUni
 
 2. **Set up a local MySQL database**:
-    - Create a database named `gouni_db`.
-    - Ensure the credentials in `application.properties` or `application.yml` match your MySQL setup.
+   - Create a database named `gouni_db`.
+   - Ensure the credentials in `application.properties` or `application.yml` match your MySQL setup.
 
 
 3. **Run Maven to install dependencies**:
    ```bash
    mvn clean install
     ```
-   
+
 4. **Start the application:**
 
     ```bash
     mvn spring-boot:run
    ```
 
-5. **Swagger UI**: 
+5. **Swagger UI**:
 
 Access the API documentation at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
@@ -89,45 +89,45 @@ For example, if you wish to override certain elements like `<license>` and `<dev
   <developers></developers>
 </project>
 ```
-   
+
 ## Troubleshooting
 
 If you encounter any issues during setup or runtime, consider the following steps:
 
 1. **Database Connection Issues**:
-    - Verify that your MySQL database is running and that the credentials in `application.properties` or `application.yml` are correct.
-    - Ensure that the MySQL service is properly configured and accessible from your application.
-    - Check for the correct database URL format in your configuration file.
+   - Verify that your MySQL database is running and that the credentials in `application.properties` or `application.yml` are correct.
+   - Ensure that the MySQL service is properly configured and accessible from your application.
+   - Check for the correct database URL format in your configuration file.
 
 
 2. **Dependency Errors**:
 
-    - Make sure all dependencies are correctly installed by running:
+   - Make sure all dependencies are correctly installed by running:
     ```bash
     mvn clean install
     ```
-    - Check the `pom.xml` for any missing or conflicting dependencies.
+   - Check the `pom.xml` for any missing or conflicting dependencies.
 
 
 3. **Application Fails to Start**:
 
-    - Review the Spring Boot logs for error messages to diagnose startup issues.
-   
-    - Check if the active profile (`dev`, `prod`, etc.) is properly set in your environment variables.
-   
-    - Confirm that your port (default: 8080) is not already in use by another service.
+   - Review the Spring Boot logs for error messages to diagnose startup issues.
+
+   - Check if the active profile (`dev`, `prod`, etc.) is properly set in your environment variables.
+
+   - Confirm that your port (default: 8080) is not already in use by another service.
 
 
 4. **JWT Authentication Issues**:
 
-    - Ensure that the **JWT_SECRET** environment variable is set and matches the key used during token generation.
-    - Verify that JWT tokens are correctly formatted and not expired.
+   - Ensure that the **JWT_SECRET** environment variable is set and matches the key used during token generation.
+   - Verify that JWT tokens are correctly formatted and not expired.
 
 
 5. **Swagger UI Not Loading**:
-    - Ensure that the application is running on the correct port.
-    - Access Swagger UI at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
-    - Verify the `springdoc-openapi` dependency is included in the project.
+   - Ensure that the application is running on the correct port.
+   - Access Swagger UI at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
+   - Verify the `springdoc-openapi` dependency is included in the project.
 
 
 If issues persist, consult the [Spring Boot reference documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/) or seek help from the project maintainers.
