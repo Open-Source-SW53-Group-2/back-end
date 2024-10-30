@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+
 @Service
 public class RateDriverCommandServiceImpl implements RateDriverCommandService {
 
@@ -15,6 +16,14 @@ public class RateDriverCommandServiceImpl implements RateDriverCommandService {
 
     public RateDriverCommandServiceImpl(RateDriverRepository rateDriverRepository) {
         this.rateDriverRepository = rateDriverRepository;
+    }
+
+    @Override
+    public Optional<RateDriver> handle(CreateRateDriverCommand command) {
+
+        var rateDriver = new RateDriver(command);
+        var createRateDriver = rateDriverRepository.save(rateDriver);
+        return Optional.of(createRateDriver);
     }
 
 
