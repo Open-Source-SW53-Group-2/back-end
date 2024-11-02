@@ -1,1 +1,0 @@
-package com.studentconnect.gouni.platform.chat.socket.configuration;
