@@ -54,14 +54,14 @@ This project contains the following specific features:
    ```bash
    mvn clean install
     ```
-   
+
 4. **Start the application:**
 
     ```bash
     mvn spring-boot:run
    ```
 
-5. **Swagger UI**: 
+5. **Swagger UI**:
 
 Access the API documentation at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
@@ -89,7 +89,7 @@ For example, if you wish to override certain elements like `<license>` and `<dev
   <developers></developers>
 </project>
 ```
-   
+
 ## Troubleshooting
 
 If you encounter any issues during setup or runtime, consider the following steps:
@@ -112,9 +112,9 @@ If you encounter any issues during setup or runtime, consider the following step
 3. **Application Fails to Start**:
 
     - Review the Spring Boot logs for error messages to diagnose startup issues.
-   
+
     - Check if the active profile (`dev`, `prod`, etc.) is properly set in your environment variables.
-   
+
     - Confirm that your port (default: 8080) is not already in use by another service.
 
 

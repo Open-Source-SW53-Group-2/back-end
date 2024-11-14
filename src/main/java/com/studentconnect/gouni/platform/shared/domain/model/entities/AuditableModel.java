@@ -10,7 +10,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.Date;
 
-@EntityListeners(AuditingEntityListener .class)
+@EntityListeners(AuditingEntityListener.class)
 @MappedSuperclass
 public class AuditableModel {
 
@@ -23,5 +23,4 @@ public class AuditableModel {
     @LastModifiedDate
     @Column(nullable = false)
     private Date updatedAt;
-
 }
